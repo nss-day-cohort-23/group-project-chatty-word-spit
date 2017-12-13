@@ -11,12 +11,14 @@
     <div id="mainWrapper">
         <div id="logo"></div>
         <h1>Word Spit</h1>
-        <div id="msgOutput">Chatty</div>    
+        <div id="textSize">
+            <div id="msgOutput">Chatty</div>
+        </div>
         <div id="navbar">
             <textarea id="msgInput" name="text-input" placeholder="Enter your message here"></textarea> 
             <button id="clearMsgs">Clear Messages</button>
             <input id="dark" type="checkbox">Dark Theme
-            <input id="large" type="checkbox">enlarge Text
+            <input id="large" type="range" min="1" max="5">Enlarge Text
         </div>
     </div>
     <script src="dist/bundle.js"></script>
