@@ -1,0 +1,63 @@
+#themesTxt {
+    display: inline;
+}
+
+.theme-dark {
+    background: darkblue;
+}
+
+.size-1 {
+    font-size: 1em;
+}
+
+.size-2 {
+    font-size: 2em;
+}
+
+.size-3 {
+    font-size: 3em;
+}
+
+.size-4 {
+    font-size: 4em;
+}
+
+.size-5 {
+    font-size: 5em;
+}
+
+#large {
+  -webkit-appearance: none;
+  width: 160px;
+  height: 20px;
+  margin: 10px 50px;
+  background: linear-gradient(to right, #03A9F4 0%, #673AB7 100%);
+  background-size: 150px 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  outline: none;
+  zoom: 130%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+input::-webkit-slider-thumb {
+ -webkit-appearance: none;
+ width: 20px;
+ height: 20px;
+ background: #d7d5f3;
+ position: relative;
+ z-index: 3;
+}
+
+input::-webkit-slider-thumb:after {
+ content: " ";
+ width: 160px;
+ height: 10px;
+ position: absolute;
+ z-index: 1;
+ right: 20px;
+ top: 5px;
+ background: #e9e9e9;
+}
