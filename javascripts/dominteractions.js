@@ -14,6 +14,7 @@ msgInput.addEventListener("keyup", (event) => {
     if (event.keyCode === 13) {
         let userMsg = msgInput.value;
         printToDom.createMsgDiv(userMsg);
+        msgInput.value = "";
     }
 });
 
