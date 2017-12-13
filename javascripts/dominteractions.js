@@ -3,11 +3,12 @@ let printToDom = require('./printtodom');
 
 
 let msgInput = document.getElementById("msgInput");
-let darkCheckBox = document.getElementById("dark");
-let largeTextBox = document.getElementById("large");
+let themesBox = document.getElementById("themes");
+let sizeRange = document.getElementById("large");
 let clearButton = document.getElementById("clearMsgs");
 let mainWrapper = document.getElementById("mainWrapper");
 let msgOutput = document.getElementById("msgOutput");
+let textRap = document.getElementById("textSize");
 
 msgInput.addEventListener("keyup", (event) => {
     if (event.keyCode === 13) {
@@ -16,12 +17,17 @@ msgInput.addEventListener("keyup", (event) => {
     }
 });
 
-darkCheckBox.addEventListener("click", () => {
-mainWrapper.classList.toggle("darkBackground");});  
+// darkCheckBox.addEventListener("click", () => {
+// mainWrapper.classList.toggle("darkBackground");});  
 
-largeTextBox.addEventListener("click", ()=>{
-mainWrapper.classList.toggle("makeItBig");});
+// largeTextBox.addEventListener("click", ()=>{
+// mainWrapper.classList.toggle("makeItBig");});
 
+
+themesBox.addEventListener("change", () => {
+mainWrapper.setAttribute("class", `theme-${themesBox.value}`);});    
+sizeRange.addEventListener("change", ()=>{
+textRap.setAttribute("class", `size-${sizeRange.value}`);});
 clearButton.addEventListener("click", () => {
     msgOutput.innerHTML = '';
     msgInput.value = ''; });
