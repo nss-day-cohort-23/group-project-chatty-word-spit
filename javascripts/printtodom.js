@@ -23,6 +23,7 @@ module.exports.createMsgDiv = (message) => {
 let addDeleteButton = (div, msg) => {
     let deleteBtn = document.createElement("button");
     deleteBtn.innerHTML = "Delete";
+    deleteBtn.setAttribute("class", "delete");
     deleteBtn.addEventListener("click", () => {
         removeFromArray(event.target);
         // console.log("After Delete",userMsgs);
@@ -53,6 +54,7 @@ let addEditButton = (msgContainer) => {
 let changeBtn = document.createElement("button");
 let addChangeBtn = () => {
     changeBtn.innerHTML = "Confirm?";
+    changeBtn.setAttribute("class", "confirm");
     event.target.parentElement.appendChild(changeBtn);
 };
 
