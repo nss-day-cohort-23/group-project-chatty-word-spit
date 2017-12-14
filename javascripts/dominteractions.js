@@ -9,6 +9,7 @@ let clearButton = document.getElementById("clearMsgs");
 let mainWrapper = document.getElementById("mainWrapper");
 let msgOutput = document.getElementById("msgOutput");
 let textRap = document.getElementById("textSize");
+let bodyChange = document.querySelector("body");
 
 msgInput.addEventListener("keypress", (event) => {
     if (event.keyCode === 13 && msgInput.value.length > 1) {
@@ -26,9 +27,12 @@ msgInput.addEventListener("keypress", (event) => {
 
 
 themesBox.addEventListener("change", () => {
-mainWrapper.setAttribute("class", `theme-${themesBox.value}`);});    
+mainWrapper.setAttribute("class", `theme-${themesBox.value}`);});
+themesBox.addEventListener("change", () => {
+    bodyChange.setAttribute("class", `theme-${themesBox.value}`);});     
 sizeRange.addEventListener("change", ()=>{
 textRap.setAttribute("class", `size-${sizeRange.value}`);});
 clearButton.addEventListener("click", () => {
     msgOutput.innerHTML = '';
     msgInput.value = ''; });
+
