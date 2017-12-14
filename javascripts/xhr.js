@@ -10,7 +10,7 @@ const parseMsgData = () => {
 };
 
 msgRequest.addEventListener("load", parseMsgData);
-msgRequest.open("GET", "/JSON/defaultcomments.json");
+msgRequest.open("GET", "/JSON/rapbattle.json");
 msgRequest.send();
 
 
