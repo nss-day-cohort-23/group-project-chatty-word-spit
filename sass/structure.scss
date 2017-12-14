@@ -2,6 +2,7 @@ body {
     background: linear-gradient(to bottom right, rgb(195, 201, 199) , #232A32 );
 }
 
+
 #themes{
     float: right;  
 }
@@ -16,14 +17,15 @@ body {
     border-bottom: 0;
     border-left:0;
     border-right:0;
-    padding: 15px 85px 20px; 
+    padding: 15px 85px 10px; 
 }
+
 #mainWrapper{
     background-color:  #385054;
     color: snow;
     text-shadow: 2px 5px 10px black;
     width: 750px;
-    height: 385px;
+    height: 365px;
     overflow: auto;
     margin-left: auto;
     margin-right: auto;
@@ -31,6 +33,7 @@ body {
     justify-content: center;
     border-radius: 40px;
 }
+
  
 #msgOutput{
     text-align: center;
