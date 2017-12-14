@@ -32,3 +32,4 @@ textRap.setAttribute("class", `size-${sizeRange.value}`);});
 clearButton.addEventListener("click", () => {
     msgOutput.innerHTML = '';
     msgInput.value = ''; });
+
