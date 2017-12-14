@@ -11,7 +11,7 @@ let msgOutput = document.getElementById("msgOutput");
 let textRap = document.getElementById("textSize");
 
 msgInput.addEventListener("keyup", (event) => {
-    if (event.keyCode === 13) {
+    if (event.keyCode === 13 && msgInput.value.length > 1) {
         let userMsg = msgInput.value;
         printToDom.createMsgDiv(userMsg);
         msgInput.value = "";
