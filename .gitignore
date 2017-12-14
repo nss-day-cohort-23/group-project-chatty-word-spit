@@ -3,4 +3,5 @@ dist/bundle.js
 stylesheets/
 .sass-cache/
 ds.store
+secretKey.js
 javascripts/secretKey.js

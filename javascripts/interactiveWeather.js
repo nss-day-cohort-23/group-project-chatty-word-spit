@@ -11,10 +11,11 @@ let weatherResponse = (weather, time, precipitation) => {
     currentPrecipForUser = precipitation;
 };
 
+//adding in dummy argument//
 let getUserWeather = (userEntry) => {
-    console.log(userEntry);
-    let u = "user";
     let a = "API";
+    let u = "user";
+    console.log(userEntry);
     if (userEntry.includes("weather")) {
         printToDom.createMsgDiv(userEntry, u);
         printToDom.createMsgDiv(currentTempForUser, a);
