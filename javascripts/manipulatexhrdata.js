@@ -1,15 +1,13 @@
 "use strict";
 let printToDom = require('./printtodom');
 
-
 let arrayToMsg = (array) => {
-    array.forEach((obj) => {
-        let strng = obj.wingstop;
-            printToDom.createMsgDiv(strng);
-        strng = obj.wendys;
-            printToDom.createMsgDiv(strng);
-    });
+    for (let i = 0; i < array.length; i++) {
+        let msgObj = array[i];
+        for (const prop in msgObj) {
+            printToDom.createMsgDiv(msgObj[prop]);
+        }
+    }
 };
-
 
 module.exports = arrayToMsg;
