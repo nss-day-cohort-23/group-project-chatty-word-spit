@@ -5,13 +5,21 @@ let outputField = document.getElementById("msgOutput");
 let count = 0;
 let userMsgs=[];
 
+<<<<<<< HEAD
 module.exports.createMsgDiv = (message,source) => {
+=======
+module.exports.createMsgDiv = (message, source) => {
+>>>>>>> master
     count += 1;
     // let fixMsg = message.substring(0, message.length-1);
     addToArray(message);
     let msgContainer = document.createElement("div");
-    // assign individual class to div
-    msgContainer.setAttribute("class", "fixMsg");
+        if (source === "user") {
+            msgContainer.setAttribute("class", "userMsg");
+        }
+        else {
+            msgContainer.setAttribute("class", "APIMsg");
+        }
     let msgContents = 
         `<p>${message}</p>`;
     msgContainer.innerHTML = msgContents;
@@ -56,15 +64,15 @@ let addChangeBtn = () => {
     changeBtn.innerHTML = "Confirm?";
     changeBtn.setAttribute("class", "confirm");
     event.target.parentElement.appendChild(changeBtn);
+    changeBtn.addEventListener("click", () => {
+        event.target.parentElement.childNodes[0].innerHTML = msgInput.value;
+        addToArray(msgInput.value);
+        msgInput.value = "";
+        event.target.parentElement.removeChild(event.target);
+    });
 };
 
 //Confirm Change Event Listener
-changeBtn.addEventListener("click", () => {
-    event.target.parentElement.childNodes[0].innerHTML = msgInput.value;
-    addToArray(msgInput.value);
-    msgInput.value = "";
-    event.target.parentElement.removeChild(event.target);
-});
 
 //Put add and remove to seperate functions
 let addToArray = (msg)=> {

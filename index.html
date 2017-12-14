@@ -9,6 +9,14 @@
     <title>Word Spit</title>
 </head>
 <body>
+<select id="themes">
+    <option value="">Themes</option>
+    <option value="dark">Dark</option>
+    <option value="bitchin">Bitchin</option>
+    <option value="eddie">Eddie</option>
+    <option value="melissa">Melissa</option>
+    <option value="kate">Kate</option>
+</select>
 <span>
     <img src="../images/weather.png" id="lower" width: 10px; height: 10px;/>
     <i>Weather Chatter</i>
@@ -21,15 +29,8 @@
             <img src="../images/bottomnav.gif"height="71" width="90" style="border:0px;">
             <textarea id="msgInput" name="text-input" placeholder="Enter your message here"></textarea> 
             <button id="clearMsgs">Clear Messages</button>
-            <select id="themes"> 
-                <option value="">Themes</option>                
-                <option value="dark">Dark</option>
-                <option value="kyle">Kyle</option>
-                <option value="eddie">Eddie</option>
-                <option value="grillz">Rap Battle</option>
-                <option value="wrecking">Wrecking</option>
-            </select> 
-            <input id="large" type="range" min="1" max="5">Enlarge Text
+            <button id="nukeIt">Nuke it</button>
+             <input id="large" type="range" min="1" max="5">Enlarge Text
         </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
