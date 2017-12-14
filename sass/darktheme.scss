@@ -1,46 +1,75 @@
-div#mainWrapper.theme-dark {
-    background-color: #57585A;
-    color: #D9E2DF;
-    border: 2px solid;
-    margin: 2em;
+body.theme-dark {
+    background: linear-gradient(to bottom right, #353636 , #232A32 );
+}
+
+#themes{
+    float: right;  
+}
+
+#navbar{
+    display:flex;
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    border: 2px solid #385054;
+    border-bottom: 0;
+    border-left:0;
+    border-right:0;
+    padding: 15px 85px 20px; 
+}
+#mainWrapper.theme-dark {
+    background-color:  #0e0f0f;
+    color: slategray;
+    text-shadow: 2px 5px 10px black;
+    width: 750px;
+    height: 365px;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: initial;
+    justify-content: center;
+    border-radius: 40px;
+}
+ 
+#msgOutput{
+    text-align: center;
+    overflow: auto;
+    height: -webkit-fill-available;
+}
+
+textarea{
+    height: 65px;
+    width:550px;
+}
+
+/*Buttons on Standard format*/
+
+.edit-button {
+    background-color: #D9E2DF;
     border-radius: 25px;
-}
-.theme-dark div.msg {
-    background-color: #57585A;
-    border: solid 1px black;
-    border-radius: 25px;
-    width: 50%;
-    margin: 1em 0.5em 1em 0;
-}
-div#mainWrapper.theme-dark div#msgOutput {
-    background-color: #232A32;
-    padding-bottom: 2px;
-    height: 600px;
-    width: 1030px;
-    overflow: scroll;
+    color: black;
+    
 }
 
-.theme-dark h1 {
-}
-.theme-dark #navbar {
-    border: 4px solid #869B96;
-    border-radius: 0px 0px 25px 25px;
-    background-color: #57585A;
-    width: 1030px;
-    bottom: 0;
-    position: fixed;
+.edit-button:hover{
+    opacity:.2;
 }
 
-.theme-dark p {
-    padding-left: 1em;
+.delete{
+    background-color: #D9E2DF;
+    border-radius: 25px; 
 }
 
-.theme-dark button {
- margin-left: 3em;
- margin-bottom: 1em;
- border-radius: 25px;   
+.delete:hover{
+    opacity:.2;
 }
 
-.theme-dark #msgInput {
-    margin-top: 1em;
+.confirm{
+    background-color: #D9E2DF;
+    border-radius: 25px; 
+}
+
+.confirm:hover{
+    opacity:.2;
 }

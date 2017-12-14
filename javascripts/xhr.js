@@ -1,17 +1,20 @@
 "use strict";
+
+
 let manipulateData = require('./manipulatexhrdata');
 let getWeather = require('./getWeatherData');
 
 let msgRequest = new XMLHttpRequest();
 
 const parseMsgData = () => {
-    const defaultMsgArray = JSON.parse(event.target.responseText).messages;
+    console.log(event.target.responseText);
+    const defaultMsgArray = JSON.parse(event.target.responseText);
     manipulateData(defaultMsgArray);
     
 };
 
 msgRequest.addEventListener("load", parseMsgData);
-msgRequest.open("GET", "/JSON/rapbattle.json");
+msgRequest.open("GET", "https://word-spit.firebaseio.com/messages/messages.json");
 msgRequest.send();
 
 let weatherRequest = new XMLHttpRequest();
