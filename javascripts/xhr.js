@@ -29,7 +29,7 @@ let collectWeatherData = () => {
     getWeather.gatherWeather(weatherData);
 };
 let APIKey = require('./secretKey');
-weatherRequest.open("GET", `http://api.wunderground.com/api/${APIKey}/conditions/q/CA/San_Francisco.json`);
+weatherRequest.open("GET", `http://api.wunderground.com/api/${APIKey}/conditions/q/TN/Nashville.json`);
 
 weatherRequest.addEventListener("load", collectWeatherData);
 weatherRequest.addEventListener("error", failToLoad);
