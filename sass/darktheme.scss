@@ -1,0 +1,46 @@
+div#mainWrapper.theme-dark {
+    background-color: #57585A;
+    color: #D9E2DF;
+    border: 2px solid;
+    margin: 2em;
+    border-radius: 25px;
+}
+.theme-dark div.msg {
+    background-color: #57585A;
+    border: solid 1px black;
+    border-radius: 25px;
+    width: 50%;
+    margin: 1em 0.5em 1em 0;
+}
+div#mainWrapper.theme-dark div#msgOutput {
+    background-color: #232A32;
+    padding-bottom: 2px;
+    height: 600px;
+    width: 1030px;
+    overflow: scroll;
+}
+
+.theme-dark h1 {
+}
+.theme-dark #navbar {
+    border: 4px solid #869B96;
+    border-radius: 0px 0px 25px 25px;
+    background-color: #57585A;
+    width: 1030px;
+    bottom: 0;
+    position: fixed;
+}
+
+.theme-dark p {
+    padding-left: 1em;
+}
+
+.theme-dark button {
+ margin-left: 3em;
+ margin-bottom: 1em;
+ border-radius: 25px;   
+}
+
+.theme-dark #msgInput {
+    margin-top: 1em;
+}
