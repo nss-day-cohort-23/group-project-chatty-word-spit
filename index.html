@@ -4,27 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/main.css">
     <title>Word Spit</title>
 </head>
 <body>
-    <div id="mainWrapper">
-        <div id="logo"></div>
-        <h1>Word Spit</h1>
-        <div id="textSize">
-            <div id="msgOutput">Chatty</div>
-        </div>
-        <div id="navbar">
-            <textarea id="msgInput" name="text-input" placeholder="Enter your message here"></textarea> 
-            <button id="clearMsgs">Clear Messages</button>
-            <p id="themesTxt"> Themes </p>
-            <select id="themes"> 
+    <div class="topnav">
+        <span><img src="../images/weather.png" id="lower" width: 10px; height: 10px;/><i>Weather Chatter</i></span>
+        <select id="themes" style="height:35px"> 
+                <option value="choose">Select Theme Color</option>
                 <option value="dark">Dark</option>
                 <option value="kyle">Kyle</option>
                 <option value="eddie">Eddie</option>
                 <option value="melissa">Melissa</option>
                 <option value="kate">Kate</option>
             </select>
+    </div>
+
+    <div id="mainWrapper">
+        <div id="textSize">
+            <div id="msgOutput">Chatty</div>
+        </div>
+        <div id="navbar">
+            <img src="../images/bottomnav.gif"height="71" width="90" style="border:0px;">
+            <textarea id="msgInput" name="text-input" placeholder="Enter your message here"></textarea> 
+            <button id="clearMsgs">Clear Messages</button>
+            <!-- <p id="themesTxt"> Themes </p>
+            <select id="themes"> 
+                <option value="dark">Dark</option>
+                <option value="kyle">Kyle</option>
+                <option value="eddie">Eddie</option>
+                <option value="melissa">Melissa</option>
+                <option value="kate">Kate</option>
+            </select> -->
             <input id="large" type="range" min="1" max="5">Enlarge Text
         </div>
     </div>
