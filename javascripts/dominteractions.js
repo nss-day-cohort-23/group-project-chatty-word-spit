@@ -1,5 +1,5 @@
 "use strict";
-let printToDom = require('./printtodom');
+let printToDom = require('./interactiveWeather');
 
 
 let msgInput = document.getElementById("msgInput");
@@ -13,7 +13,7 @@ let textRap = document.getElementById("textSize");
 msgInput.addEventListener("keyup", (event) => {
     if (event.keyCode === 13 && msgInput.value.length > 1) {
         let userMsg = msgInput.value;
-        printToDom.createMsgDiv(userMsg);
+        printToDom.getUserWeather(userMsg);
         msgInput.value = "";
     }
 });
