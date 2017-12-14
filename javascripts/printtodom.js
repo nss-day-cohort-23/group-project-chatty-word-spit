@@ -11,7 +11,7 @@ module.exports.createMsgDiv = (message) => {
     addToArray(fixMsg);
     let msgContainer = document.createElement("div");
     // assign individual class to div
-    msgContainer.setAttribute("class", `msg${count}`);
+    msgContainer.setAttribute("class", "msg");
     let msgContents = 
         `<p>${fixMsg}</p>`;
     msgContainer.innerHTML = msgContents;
@@ -66,11 +66,9 @@ changeBtn.addEventListener("click", () => {
 
 //Put add and remove to seperate functions
 let addToArray = (msg)=> {
-    if (count > 5) {
-        userMsgs.push(msg);
-    }
+    userMsgs.push(msg);
     console.log("ADDED", userMsgs);
-};
+    };
 
 let removeFromArray = (event) => {
     let targetMsg = event.parentElement.childNodes[0].innerHTML;
@@ -86,4 +84,4 @@ let printToDom = (fullDiv) => {
     outputField.appendChild(fullDiv);
 };
 
-// module.exports = createMsgDiv;
+// module.exports = {createMsgDiv, addToArray};
