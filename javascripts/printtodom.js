@@ -7,16 +7,16 @@ let userMsgs=[];
 
 module.exports.createMsgDiv = (message) => {
     count += 1;
-    let fixMsg = message.substring(0, message.length-1);
-    addToArray(fixMsg);
+    // let fixMsg = message.substring(0, message.length-1);
+    addToArray(message);
     let msgContainer = document.createElement("div");
     // assign individual class to div
-    msgContainer.setAttribute("class", "msg");
+    msgContainer.setAttribute("class", "fixMsg");
     let msgContents = 
-        `<p>${fixMsg}</p>`;
+        `<p>${message}</p>`;
     msgContainer.innerHTML = msgContents;
-    console.log(msgContainer);
-    addDeleteButton(msgContainer, fixMsg);
+    // console.log(msgContainer);
+    addDeleteButton(msgContainer, message);
     addEditButton(msgContainer);
 };
 
@@ -26,7 +26,7 @@ let addDeleteButton = (div, msg) => {
     deleteBtn.setAttribute("class", "delete");
     deleteBtn.addEventListener("click", () => {
         removeFromArray(event.target);
-        console.log("After Delete",userMsgs);
+        // console.log("After Delete",userMsgs);
         outputField.removeChild(div);
     });
     div.appendChild(deleteBtn);
@@ -78,7 +78,7 @@ let removeFromArray = (event) => {
     if (indexVal > -1) {
         userMsgs.splice(indexVal, 1);
     }
-    console.log("REMOVED", userMsgs);
+    // console.log("REMOVED", userMsgs);
 };
 
 //Print to dom

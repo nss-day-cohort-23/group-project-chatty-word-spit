@@ -32,6 +32,21 @@
             <input id="large" type="range" min="1" max="5">Enlarge Text
         </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyASpwTbBCK_lFlPeOW7TVCAuUBxxGd4NOs",
+        authDomain: "word-spit.firebaseapp.com",
+        databaseURL: "https://word-spit.firebaseio.com",
+        projectId: "word-spit",
+        storageBucket: "word-spit.appspot.com",
+        messagingSenderId: "705395099755"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
     <script src="dist/bundle.js"></script>
 </body>
 </html>
