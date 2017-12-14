@@ -1,24 +1,24 @@
 {
     "messages": [
         {
-            "wingstop": "Gamestop, Wingstop. Copped a new game for the top spot. Saucin' and tossin' our wings in a pot, pot. We got that Original Hot, Hot.",
-            "wendys": "Fresh, never frozen since 69. Trying to cop that mixtape, better get in line.  Grabbed a couple wings now you're trying to fly.  But nothing gets 'em dipping like a frosty and fry."
+            "one": "Wingstop: Gamestop, Wingstop. Copped a new game for the top spot. Saucin' and tossin' our wings in a pot, pot. We got that Original Hot, Hot.",
+            "two": "Wendys: Fresh, never frozen since 69. Trying to cop that mixtape, better get in line.  Grabbed a couple wings now you're trying to fly.  But nothing gets 'em dipping like a frosty and fry."
         },
         {
-            "wingstop": "A frosty and a fry? Giiiirl bye.  Wingstop flavor bringin' all the cravers! They eat us now and save you for later.",
-            "wendys": "Please. They eat us now, they eat us later.  Adding up our Wins on a calculator.  You're a laughless clown, or a king that's throneless let me get those wings uuuuhhhhh boneless."
+            "one": "Wingstop: A frosty and a fry? Giiiirl bye.  Wingstop flavor bringin' all the cravers! They eat us now and save you for later.",
+            "two": "Wendys: Please. They eat us now, they eat us later.  Adding up our Wins on a calculator.  You're a laughless clown, or a king that's throneless let me get those wings uuuuhhhhh boneless."
         },
         {
-            "wingstop": "Add 'em up, add 'em up. Ain't nothing like Wingstop ranch in a cup. Not here to throw shade, just spittin' some heat.  Burger over wings..nah that's weak.",
-            "wendys": "Wings fly high but it's time to run cuz we're serving up bars on a warm toasted bun. We keep it spicy with our chicken, our flow, and memes. So it's nighty night now, bruh your teeth, sweet dreams."
+            "one": "Wingstop: Add 'em up, add 'em up. Ain't nothing like Wingstop ranch in a cup. Not here to throw shade, just spittin' some heat.  Burger over wings..nah that's weak.",
+            "two": "Wendys: Wings fly high but it's time to run cuz we're serving up bars on a warm toasted bun. We keep it spicy with our chicken, our flow, and memes. So it's nighty night now, bruh your teeth, sweet dreams."
         },
         {
-            "wingstop": "You tried it, you really did. Who'd you borrow those lines from Sid the kid? It's closing time and we're leaving frozen beef behind." ,
-            "wendys": "We had some fun, but yeah we're through. Gift wrapping this L to send home with you."
+            "one": "Wingstop: You tried it, you really did. Who'd you borrow those lines from Sid the kid? It's closing time and we're leaving frozen beef behind." ,
+            "two": "Wendys: We had some fun, but yeah we're through. Gift wrapping this L to send home with you."
         },
         {
-            "wingstop": "Yes, that is a rap battle between Wendy's and Wingstop.",
-            "wendys": "You're welcome."
+            "one": "Wingstop: Yes, that is a rap battle between Wendy's and Wingstop.",
+            "two": "Wendys: You're welcome."
         }
     ]
 }

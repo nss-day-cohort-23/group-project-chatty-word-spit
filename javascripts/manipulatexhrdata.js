@@ -2,11 +2,12 @@
 let printToDom = require('./printtodom');
 
 let arrayToMsg = (array) => {
-    array.forEach((str) => {
-        printToDom.createMsgDiv(str);
-    });
+    for (let i = 0; i < array.length; i++) {
+        let msgObj = array[i];
+        for (const prop in msgObj) {
+            printToDom.createMsgDiv(msgObj[prop]);
+        }
+    }
 };
-
-// arrayToMsg(dummyArray);
 
 module.exports = arrayToMsg;
