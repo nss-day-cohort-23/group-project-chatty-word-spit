@@ -11,22 +11,25 @@ let weatherResponse = (weather, time, precipitation) => {
     currentPrecipForUser = precipitation;
 };
 
+//adding in dummy argument//
 let getUserWeather = (userEntry) => {
+    let a = "API";
+    let u = "user";
     console.log(userEntry);
     if (userEntry.includes("weather")) {
-        printToDom.createMsgDiv(userEntry);
-        printToDom.createMsgDiv(currentTempForUser);
+        printToDom.createMsgDiv(userEntry, u);
+        printToDom.createMsgDiv(currentTempForUser, a);
     } 
     else if (userEntry.includes("time")) {
-        printToDom.createMsgDiv(userEntry);
-        printToDom.createMsgDiv(currentTimeForUser);
+        printToDom.createMsgDiv(userEntry, u);
+        printToDom.createMsgDiv(currentTimeForUser,a);
     }
     else if (userEntry.includes("rain") || userEntry.includes("snow")) {
-        printToDom.createMsgDiv(userEntry);
-        printToDom.createMsgDiv(currentPrecipForUser);
+        printToDom.createMsgDiv(userEntry, u);
+        printToDom.createMsgDiv(currentPrecipForUser,a);
     }
     else {
-        printToDom.createMsgDiv(userEntry);
+        printToDom.createMsgDiv(userEntry, u);
     }
 };
 

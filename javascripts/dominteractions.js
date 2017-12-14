@@ -16,6 +16,7 @@ msgInput.addEventListener("keypress", (event) => {
         let userMsg = msgInput.value;
         printToDom.getUserWeather(userMsg);
         msgInput.value = "";
+        msgOutput.scrollTop=msgOutput.scrollHeight;
     }
 });
 
