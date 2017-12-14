@@ -11,7 +11,7 @@ module.exports.createMsgDiv = (message) => {
     addToArray(fixMsg);
     let msgContainer = document.createElement("div");
     // assign individual class to div
-    msgContainer.setAttribute("class", `msg${count}`);
+    msgContainer.setAttribute("class");
     let msgContents = 
         `<p>${fixMsg}</p>`;
     msgContainer.innerHTML = msgContents;
