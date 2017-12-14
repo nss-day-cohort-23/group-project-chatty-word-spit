@@ -1,0 +1,125 @@
+body.theme-fwb {
+    background: linear-gradient(to bottom right, rgb(195, 201, 199) , #232A32 );
+    background-image: url("../images/fryz.png"), url("../images/wingz.png");
+    background-position: right bottom, left top;
+    // background-repeat: no-repeat, repeat;
+
+}
+
+
+#themes{
+    float: right;  
+}
+
+#navbar{
+    display:flex;
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    border: 2px solid #385054;
+    border-bottom: 0;
+    border-left:0;
+    border-right:0;
+    padding: 15px 85px 10px; 
+}
+
+#mainWrapper.theme-fwb{
+    // background-color:  #385054;
+    background: none;
+    color: black;
+    text-shadow: 2px 5px 10px black;
+    width: 750px;
+    height: 365px;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: initial;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+ 
+#msgOutput{
+    text-align: center;
+    overflow: auto;
+    height: -webkit-fill-available;
+}
+
+textarea{
+    height: 65px;
+    width:550px;
+}
+
+/*Buttons on Standard format*/
+
+.edit-button {
+    background-color: #D9E2DF;
+    border-radius: 25px;
+    color: black;
+    
+}
+
+.edit-button:hover{
+    opacity:.2;
+}
+
+.delete{
+    background-color: #D9E2DF;
+    border-radius: 25px; 
+}
+
+.delete:hover{
+    opacity:.2;
+}
+
+.confirm{
+    background-color: #D9E2DF;
+    border-radius: 25px; 
+}
+
+.confirm:hover{
+    opacity:.2;
+}
+
+#clearMsgs{
+    background-color:  #D9E2DF; 
+    color: black;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    // border-radius: 25%;
+    
+}
+
+#nukeIt {
+    background-color: #D9E2DF;
+    color: black;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+#themes {
+    background-color: #D9E2DF;
+    color: black;
+    border: none;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
