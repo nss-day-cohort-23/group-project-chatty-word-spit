@@ -7,16 +7,16 @@ let userMsgs=[];
 
 module.exports.createMsgDiv = (message) => {
     count += 1;
-    let fixMsg = message.substring(0, message.length-1);
+    // let fixMsg = message.substring(0, message.length-1);
     addToArray(message);
     let msgContainer = document.createElement("div");
     // assign individual class to div
     msgContainer.setAttribute("class", "fixMsg");
     let msgContents = 
-        `<p>${fixMsg}</p>`;
+        `<p>${message}</p>`;
     msgContainer.innerHTML = msgContents;
     // console.log(msgContainer);
-    addDeleteButton(msgContainer, fixMsg);
+    addDeleteButton(msgContainer, message);
     addEditButton(msgContainer);
 };
 
@@ -69,7 +69,7 @@ changeBtn.addEventListener("click", () => {
 //Put add and remove to seperate functions
 let addToArray = (msg)=> {
     userMsgs.push(msg);
-    // console.log("ADDED", userMsgs);
+    console.log("ADDED", userMsgs);
     };
 
 let removeFromArray = (event) => {

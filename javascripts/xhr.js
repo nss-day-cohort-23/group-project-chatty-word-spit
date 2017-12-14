@@ -25,8 +25,8 @@ let collectWeatherData = () => {
     console.log(weatherData);
     getWeather.gatherWeather(weatherData);
 };
-
-weatherRequest.open("GET", "http://api.wunderground.com/api/412bec35e927aae7/conditions/q/CA/San_Francisco.json");
+let APIKey = require('./secretKey');
+weatherRequest.open("GET", `http://api.wunderground.com/api/${APIKey}/conditions/q/CA/San_Francisco.json`);
 
 weatherRequest.addEventListener("load", collectWeatherData);
 weatherRequest.addEventListener("error", failToLoad);

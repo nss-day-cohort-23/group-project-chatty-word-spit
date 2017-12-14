@@ -10,7 +10,7 @@ let mainWrapper = document.getElementById("mainWrapper");
 let msgOutput = document.getElementById("msgOutput");
 let textRap = document.getElementById("textSize");
 
-msgInput.addEventListener("keyup", (event) => {
+msgInput.addEventListener("keypress", (event) => {
     if (event.keyCode === 13 && msgInput.value.length > 1) {
         let userMsg = msgInput.value;
         printToDom.getUserWeather(userMsg);
