@@ -56,15 +56,15 @@ let addChangeBtn = () => {
     changeBtn.innerHTML = "Confirm?";
     changeBtn.setAttribute("class", "confirm");
     event.target.parentElement.appendChild(changeBtn);
+    changeBtn.addEventListener("click", () => {
+        event.target.parentElement.childNodes[0].innerHTML = msgInput.value;
+        addToArray(msgInput.value);
+        msgInput.value = "";
+        event.target.parentElement.removeChild(event.target);
+    });
 };
 
 //Confirm Change Event Listener
-changeBtn.addEventListener("click", () => {
-    event.target.parentElement.childNodes[0].innerHTML = msgInput.value;
-    addToArray(msgInput.value);
-    msgInput.value = "";
-    event.target.parentElement.removeChild(event.target);
-});
 
 //Put add and remove to seperate functions
 let addToArray = (msg)=> {
