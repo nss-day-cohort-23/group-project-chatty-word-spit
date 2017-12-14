@@ -36,3 +36,4 @@ clearButton.addEventListener("click", () => {
     msgOutput.innerHTML = '';
     msgInput.value = ''; });
 
+    

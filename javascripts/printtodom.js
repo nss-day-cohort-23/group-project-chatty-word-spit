@@ -5,13 +5,17 @@ let outputField = document.getElementById("msgOutput");
 let count = 0;
 let userMsgs=[];
 
-module.exports.createMsgDiv = (message) => {
+module.exports.createMsgDiv = (message, source) => {
     count += 1;
     // let fixMsg = message.substring(0, message.length-1);
     addToArray(message);
     let msgContainer = document.createElement("div");
-    // assign individual class to div
-    msgContainer.setAttribute("class", "fixMsg");
+        if (source === "user") {
+            msgContainer.setAttribute("class", "userMsg");
+        }
+        else {
+            msgContainer.setAttribute("class", "APIMsg");
+        }
     let msgContents = 
         `<p>${message}</p>`;
     msgContainer.innerHTML = msgContents;
