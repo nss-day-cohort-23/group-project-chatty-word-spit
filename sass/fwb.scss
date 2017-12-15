@@ -1,6 +1,9 @@
-body {
+body.theme-fwb {
     background: linear-gradient(to bottom right, rgb(195, 201, 199) , #232A32 );
-    
+    background-image: url("../images/fryz.png"), url("../images/wingz.png");
+    background-position: right bottom, left top;
+    // background-repeat: no-repeat, repeat;
+
 }
 
 
@@ -21,11 +24,12 @@ body {
     padding: 15px 85px 10px; 
 }
 
-#mainWrapper{
-    background-color:  #385054;
-    color: rgb(12, 12, 12);
+#mainWrapper.theme-fwb{
+    // background-color:  #385054;
+    background: none;
+    color: black;
     width: 750px;
-    height: 350px;
+    height: 365px;
     overflow: auto;
     margin-left: auto;
     margin-right: auto;
@@ -40,13 +44,6 @@ body {
     overflow: auto;
     height: -webkit-fill-available;
 }
-
-// .fixMsg {
-//     overflow: auto;
-//     position: absolute;
-//     bottom: 0;
-//     max-height: 400px;
-// }
 
 textarea{
     height: 65px;

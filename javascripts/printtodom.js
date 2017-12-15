@@ -5,11 +5,7 @@ let outputField = document.getElementById("msgOutput");
 let count = 0;
 let userMsgs=[];
 
-<<<<<<< HEAD
 module.exports.createMsgDiv = (message,source) => {
-=======
-module.exports.createMsgDiv = (message, source) => {
->>>>>>> master
     count += 1;
     // let fixMsg = message.substring(0, message.length-1);
     addToArray(message);
