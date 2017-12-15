@@ -1,13 +1,12 @@
-body.theme-miley {
-    background: linear-gradient(to bottom right, #353636 , #232A32 );
-    background-image: url("../images/miley.gif");
+body.theme-light {
+    background: linear-gradient(to bottom right, whitesmoke , lightgray);
 }
 
 #themes{
     float: right;  
 }
 
-#navbar.theme-miley{
+#navbar.theme-light{
     display:flex;
     position:fixed;
     left:0;
@@ -19,10 +18,10 @@ body.theme-miley {
     border-right:0;
     padding: 15px 85px 20px; 
 }
-#mainWrapper.theme-miley {
+#mainWrapper.theme-light{
     background-color:  #faffff;
     
-    color: rgb(15, 15, 15);
+    color: rgb(141, 140, 140);
     width: 750px;
     height: 380px;
     overflow: auto;
