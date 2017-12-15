@@ -1,6 +1,9 @@
-body {
+body.theme-grillz {
     background: linear-gradient(to bottom right, rgb(195, 201, 199) , #232A32 );
-    
+    background-image: url("../images/grillz.png");
+    background-position: right bottom, left top;
+    // background-repeat: no-repeat, repeat;
+
 }
 
 
@@ -21,12 +24,13 @@ body {
     padding: 15px 85px 10px; 
 }
 
-#mainWrapper{
-    background-color:  #385054;
-    color: rgb(12, 12, 12);
+#mainWrapper.theme-grillz{
+    // background-color:  #385054;
+    background: none;
+    color: black;
     width: 750px;
-    height: 350px;
-    // overflow: auto;
+    height: 365px;
+    overflow: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: initial;
@@ -37,16 +41,9 @@ body {
  
 #msgOutput{
     text-align: center;
-    // overflow: auto;
+    overflow: auto;
     height: -webkit-fill-available;
 }
-
-// .fixMsg {
-//     overflow: auto;
-//     position: absolute;
-//     bottom: 0;
-//     max-height: 400px;
-// }
 
 textarea{
     height: 65px;
