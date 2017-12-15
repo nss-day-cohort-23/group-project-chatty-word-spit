@@ -73,7 +73,7 @@ let addChangeBtn = () => {
 //Put add and remove to seperate functions
 let addToArray = (msg)=> {
     userMsgs.push(msg);
-    console.log("ADDED", userMsgs);
+    // console.log("ADDED", userMsgs);
     };
 
 let removeFromArray = (event) => {
