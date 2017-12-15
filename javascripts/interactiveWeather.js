@@ -24,7 +24,7 @@ let getUserWeather = (userEntry) => {
         printToDom.createMsgDiv(userEntry, u);
         printToDom.createMsgDiv(currentTempForUser, a);
     } 
-    else if (userEntry.includes("time")) {
+    else if (userEntry.includes("time") || userEntry.includes("date")) {
         printToDom.createMsgDiv(userEntry, u);
         printToDom.createMsgDiv(currentTimeForUser, a);
     }
@@ -36,7 +36,7 @@ let getUserWeather = (userEntry) => {
         printToDom.createMsgDiv(userEntry, u);
         printToDom.createMsgDiv(currentWindChillForUser, a);
     }
-    else if (userEntry.includes("wind")) {
+    else if (userEntry.includes("wind") || userEntry.includes("windy")) {
         printToDom.createMsgDiv(userEntry, u);
         printToDom.createMsgDiv(currentWindForUser, a);
     }
